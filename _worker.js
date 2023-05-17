@@ -1,6 +1,7 @@
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
+    // proxy domain
     url.host = "api.openai.com";
     // openai is already set all CORS heasders 
     return fetch(url, {
