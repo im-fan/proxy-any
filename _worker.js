@@ -21,7 +21,7 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url);
     // proxy domain
-    url.host = "chat-gpt-next-web-eight-rose-66.vercel.app";
+    url.host = "api.openai.com";
     // openai is already set all CORS heasders 
     const response = await axios({
       method: request.method,
