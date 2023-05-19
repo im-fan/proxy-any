@@ -3,7 +3,7 @@ export default {
     const url = new URL(request.url);
     // proxy domain
     //api.openai.com
-    url.host = "chat-gpt-next-web-eight-rose-66.vercel.app";
+    url.host = "api.openai.com";
     // openai is already set all CORS heasders 
     return fetch(url, {
       headers: request.headers,
