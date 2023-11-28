@@ -8,7 +8,7 @@ export default {
                 const url = new URL(url);
                 // proxy domain
                 //api.openai.com
-                // url.host = "api.openai.com";
+                // url.host = "ai.fakeopen.com";
                 // openai is already set all CORS heasders 
                 const response = await fetch(url, {
                     headers: request.headers,
